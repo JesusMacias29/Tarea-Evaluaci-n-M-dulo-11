@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" xmlns:fx="http://javafx.com/fxml" fx:controller="com.tunnel.EntradaController" prefWidth="900" prefHeight="600" stylesheets="@halloween.css">
+    <children>
+        <StackPane AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" styleClass="gradient-bg">
+            <children>
+                <VBox spacing="14" alignment="CENTER">
+                    <children>
+                        <Label text="Entrada al Túnel del Terror" styleClass="title"/>
+                        <Label text="Introduce tus datos para continuar" styleClass="subtitle"/>
+                        <GridPane hgap="12" vgap="12">
+                            <columnConstraints>
+                                <ColumnConstraints halignment="RIGHT" minWidth="120"/>
+                                <ColumnConstraints halignment="LEFT" minWidth="260"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="40"/>
+                                <RowConstraints minHeight="40"/>
+                                <RowConstraints minHeight="40"/>
+                            </rowConstraints>
+                            <children>
+                                <Label text="Nombre:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                                <TextField fx:id="txtNombre" promptText="Ej. Jesús" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                                <Label text="Apellidos:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                                <TextField fx:id="txtApellidos" promptText="Ej. Macías Ojuelos" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                                <Label text="Curso:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                                <ComboBox fx:id="cmbCurso" promptText="Selecciona..." GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                            </children>
+                        </GridPane>
+                        <Button text="Entrar si te atreves" onAction="#onEntrar" styleClass="primary"/>
+                        <Label text="Tus datos se usarán solo para mostrarte en la ruleta." opacity="0.8" />
+                    </children>
+                    <padding><Insets top="24" right="24" bottom="24" left="24"/></padding>
+                </VBox>
+            </children>
+        </StackPane>
+    </children>
+</AnchorPane>

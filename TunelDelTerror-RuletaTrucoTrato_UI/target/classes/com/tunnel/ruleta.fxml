@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.tunnel.RuletaController" prefWidth="900" prefHeight="600" stylesheets="@halloween.css">
+    <top>
+        <HBox spacing="10" alignment="CENTER">
+            <children>
+                <Label fx:id="lblNombreCurso" styleClass="topbar"/>
+            </children>
+            <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+        </HBox>
+    </top>
+
+    <center>
+        <StackPane fx:id="wheelContainer">
+            <children>
+                <ImageView fx:id="imgRuleta" fitWidth="360" fitHeight="360" preserveRatio="true" pickOnBounds="true">
+                    <image>
+                        <Image url="@ruleta_truco_trato.png"/>
+                    </image>
+                </ImageView>
+                <Canvas fx:id="canvasRuleta" opacity="0" managed="false" width="360" height="360"/>
+            </children>
+        </StackPane>
+    </center>
+
+    <bottom>
+        <VBox spacing="10" alignment="CENTER">
+            <children>
+                <Button fx:id="btnGirar" text="GIRAR" onAction="#onGirar" styleClass="primary"/>
+                <!-- 🔽 Ahora el resultado tiene el mismo estilo visual que la barra superior -->
+                <Label fx:id="lblResultado" styleClass="result bottombar" alignment="CENTER"/>
+            </children>
+            <padding><Insets top="10" right="10" bottom="24" left="10"/></padding>
+        </VBox>
+    </bottom>
+</BorderPane>
