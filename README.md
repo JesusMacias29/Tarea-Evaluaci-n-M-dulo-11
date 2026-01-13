@@ -37,6 +37,8 @@ La idea es completar el ciclo completo de distribución:
  │    └── jre/                    # Java embebido (si aplica)
  ├── pom.xml
  └── README.md
+
+---
 ✅ Requisitos
 Para compilar el proyecto desde cero necesitas:
 
@@ -45,7 +47,7 @@ Java JDK instalado
 Maven
 
 Windows recomendado (sobre todo para generar el .exe y el instalador)
-
+---
 1️⃣ Generación del JAR ejecutable (Maven)
 🔧 Compilar el proyecto
 Desde la carpeta raíz del proyecto:
@@ -58,6 +60,8 @@ Esto genera el .jar dentro de:
 bash
 Copiar código
 /target/
+
+
 ▶️ Probar el JAR (IMPORTANTE)
 Antes de seguir con el exe, hay que comprobar que el jar funciona bien:
 
@@ -65,7 +69,7 @@ bash
 Copiar código
 java -jar target/NOMBRE-DEL-JAR.jar
 ✅ Si se abre la interfaz de JavaFX sin errores, perfecto.
-
+---
 2️⃣ Crear el .exe con Launch4j
 🎯 Objetivo
 Convertir el .jar en un .exe que:
@@ -100,7 +104,7 @@ El .exe abre la aplicación correctamente
 No se muestra consola
 
 Funciona en un equipo sin Java instalado (si se incluye la carpeta jre/)
-
+---
 3️⃣ Crear instalador con Inno Setup
 🎯 Objetivo del instalador
 El instalador final debe:
@@ -143,7 +147,7 @@ No falla al iniciarse
 Se elimina completamente desde Windows
 
 No deja restos importantes
-
+---
 📄 Documentación del proceso
 Para la entrega se incluye un documento/presentación donde se explica:
 
@@ -151,7 +155,7 @@ Para la entrega se incluye un documento/presentación donde se explica:
 📌 herramientas usadas
 📌 errores típicos encontrados y cómo se solucionaron
 
-📤 Entrega final
+📤 
 La entrega contiene:
 
 ✅ Instalador final .exe
