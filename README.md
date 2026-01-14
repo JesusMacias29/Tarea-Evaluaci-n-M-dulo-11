@@ -27,15 +27,15 @@ La idea es completar el ciclo completo de distribución:
  📂 Estructura del proyecto
  
 ## 📁 proyecto/
- ├── 📁 src/                     # Código fuente
- ├── 📁 resources/                # Recursos (iconos, imágenes, etc.)
- ├── 📁 target/                   # Archivos compilados por Maven
- ├── 📁 dist/                     # Entrega final (JAR, EXE, instalador)
- │    ├── app.jar
- │    ├── app.exe
- │    ├── installer.exe
- │    └── jre/                    # Java embebido (si aplica)
- ├── pom.xml
+## ├── 📁 src/                     # Código fuente
+## ├── 📁 resources/                # Recursos (iconos, imágenes, etc.)
+## ├── 📁 target/                   # Archivos compilados por Maven
+## ├── 📁 dist/                     # Entrega final (JAR, EXE, instalador)
+## │    ├── app.jar
+## │    ├── app.exe
+## │    ├── installer.exe
+## │    └── jre/                    # Java embebido (si aplica)
+## ├── pom.xml
 ## └── README.md
 
 ---
