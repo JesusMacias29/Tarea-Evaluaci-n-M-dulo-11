@@ -24,7 +24,7 @@ La idea es completar el ciclo completo de distribución:
 
 ---
 
- 📂 Estructura del proyecto
+## 📂 Estructura del proyecto
  
 ## 📁 proyecto/
 ## ├── 📁 src/                     # Código fuente
