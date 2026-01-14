@@ -35,7 +35,6 @@ La idea es completar el ciclo completo de distribución:
 ## │    ├── app.exe
 ## │    ├── installer.exe
 ## │    └── jre/                    # Java embebido (si aplica)
-## ├── pom.xml
 ## └── README.md
 
 ---
@@ -110,8 +109,11 @@ Funciona en un equipo sin Java instalado (si se incluye la carpeta jre/)
 El instalador final debe:
 
 ✅ instalar la app en una ruta correcta (ej: Program Files)
+
 ✅ crear accesos directos (Escritorio + Menú Inicio)
+
 ✅ permitir desinstalar sin problemas
+
 ✅ dejar el sistema limpio
 
 📦 Resultado del instalador
