@@ -1,6 +1,6 @@
 # 🚀 Desarrollo y Distribución de una App JavaFX (Windows)
 
-👤 **Autor:** JESÚS MACÍAS  
+## 👤 **Autor:** JESÚS MACÍAS  
 
 ---
 
@@ -40,7 +40,7 @@ La idea es completar el ciclo completo de distribución:
 ## └── README.md
 
 ---
-✅ Requisitos
+## ✅ Requisitos
 
 Para compilar el proyecto desde cero necesitas:
 
@@ -50,7 +50,7 @@ Maven
 
 Windows recomendado (sobre todo para generar el .exe y el instalador)
 ---
-1️⃣ Generación del JAR ejecutable (Maven)
+## 1️⃣ Generación del JAR ejecutable (Maven)
 🔧 Compilar el proyecto
 Desde la carpeta raíz del proyecto:
 
@@ -64,7 +64,7 @@ Copiar código
 /target/
 
 
-▶️ Probar el JAR (IMPORTANTE)
+## ▶️ Probar el JAR (IMPORTANTE)
 Antes de seguir con el exe, hay que comprobar que el jar funciona bien:
 
 bash
@@ -73,8 +73,9 @@ java -jar target/NOMBRE-DEL-JAR.jar
 
 ✅ Si se abre la interfaz de JavaFX sin errores, perfecto.
 ---
-2️⃣ Crear el .exe con Launch4j
-🎯 Objetivo
+## 2️⃣ Crear el .exe con Launch4j
+
+## 🎯 Objetivo
 Convertir el .jar en un .exe que:
 
 ✅ abra la app directamente
@@ -83,7 +84,8 @@ Convertir el .jar en un .exe que:
 
 ✅ funcione incluso si el PC no tiene Java instalado (con JRE incluida)
 
-⚙️ Configuración usada en Launch4j
+## ⚙️ Configuración usada en Launch4j
+
 En Launch4j se configuró:
 
 Output file: app.exe
@@ -96,14 +98,15 @@ Icon: icono.ico (si se usa icono personalizado)
 
 Bundled JRE path: jre/ (para que funcione sin Java instalado)
 
-📌 El resultado se guarda en:
+## 📌 El resultado se guarda en:
 
 bash
+
 Copiar código
 
 /dist/app.exe
 
-✅ Prueba del ejecutable
+## ✅ Prueba del ejecutable
 
 Se comprobó que:
 
@@ -112,10 +115,11 @@ El .exe abre la aplicación correctamente
 No se muestra consola
 
 Funciona en un equipo sin Java instalado (si se incluye la carpeta jre/)
----
-3️⃣ Crear instalador con Inno Setup
 
-🎯 Objetivo del instalador
+---
+## 3️⃣ Crear instalador con Inno Setup
+
+## 🎯 Objetivo del instalador
 
 El instalador final debe:
 
@@ -127,13 +131,16 @@ El instalador final debe:
 
 ✅ dejar el sistema limpio
 
-📦 Resultado del instalador
+## 📦 Resultado del instalador
 
 El instalador final generado es:
 
 bash
+
 Copiar código
+
 /dist/installer.exe
+
 Incluye:
 
 carpeta de instalación propia
@@ -144,28 +151,29 @@ opción de desinstalar desde Windows
 
 personalización (nombre, icono, textos, etc.)
 
-🧪 Pruebas finales hechas
+## 🧪 Pruebas finales hechas
 Antes de entregar, se probó todo el proceso:
 
-✔ Instalación
+## ✔ Instalación
 
 Se instala sin errores
 
 Se crean accesos directos
 
-✔ Ejecución
+## ✔ Ejecución
 
 Se abre correctamente desde los accesos directos
 
 No falla al iniciarse
 
-✔ Desinstalación
+## ✔ Desinstalación
 
 Se elimina completamente desde Windows
 
 No deja restos importantes
+
 ---
-📄 Documentación del proceso
+## 📄 Documentación del proceso
 
 Para la entrega se incluye un documento/presentación donde se explica:
 
@@ -177,7 +185,7 @@ Para la entrega se incluye un documento/presentación donde se explica:
 
 📤 https://github.com/JesusMacias29/Tarea-Evaluaci-n-M-dulo-11/blob/main/Tarea%20Evaluaci%C3%B3n%20M%C3%B3dulo%2011%20JES%C3%9AS%20MAC%C3%8DAS.pdf
 
-La entrega contiene:
+## La entrega contiene:
 
 ✅ Instalador final .exe
 
@@ -187,7 +195,7 @@ La entrega contiene:
 
 ✅ Enlace al repositorio Git
 
-⚠️ Problemas típicos (por si pasa)
+## ⚠️ Problemas típicos (por si pasa)
 
 ❗ El JAR no abre JavaFX
 
