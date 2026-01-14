@@ -25,8 +25,8 @@ La idea es completar el ciclo completo de distribución:
 ---
 
  📂 Estructura del proyecto
-
-📁 proyecto/
+ 
+## 📁 proyecto/
  ├── 📁 src/                     # Código fuente
  ├── 📁 resources/                # Recursos (iconos, imágenes, etc.)
  ├── 📁 target/                   # Archivos compilados por Maven
@@ -36,7 +36,7 @@ La idea es completar el ciclo completo de distribución:
  │    ├── installer.exe
  │    └── jre/                    # Java embebido (si aplica)
  ├── pom.xml
- └── README.md
+## └── README.md
 
 ---
 ✅ Requisitos
@@ -155,7 +155,7 @@ Para la entrega se incluye un documento/presentación donde se explica:
 📌 herramientas usadas
 📌 errores típicos encontrados y cómo se solucionaron
 
-📤 
+📤 https://github.com/JesusMacias29/Tarea-Evaluaci-n-M-dulo-11/blob/main/Tarea%20Evaluaci%C3%B3n%20M%C3%B3dulo%2011%20JES%C3%9AS%20MAC%C3%8DAS.pdf
 La entrega contiene:
 
 ✅ Instalador final .exe
